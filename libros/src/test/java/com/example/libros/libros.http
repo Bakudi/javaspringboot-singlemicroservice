@@ -1,0 +1,26 @@
+### Obtener todos los libros
+GET http://localhost:8081/api/libros
+Accept: application/json
+
+### Crear un nuevo libro
+POST http://localhost:8081/api/libros
+Content-Type: application/json
+
+{
+  "titulo": "Cien años de soledad",
+  "autor": "Gabriel García Márquez",
+  "genero": "Realismo mágico",
+  "anio": 1967,
+  "precio": 50000
+}
+
+###
+
+### Buscar libros por autor
+GET http://localhost:8081/api/libros/autor/Gabriel García Márquez
+Accept: application/json
+
+
+
+### Eliminar libro por ID
+DELETE http://localhost:8081/api/libros/1
